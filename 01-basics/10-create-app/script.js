@@ -10,7 +10,7 @@ const App = defineComponent({
     }
   },
 
-  template: '<div>Сегодня {{ date }}</div>',
+  template: `<div>Сегодня {{ date }}</div>`,
 })
 
 createApp(App).mount('#app')
