@@ -21,8 +21,10 @@ export default defineComponent({
     watch([x, y], () => {
       // Находим метку и изменяем её положение
       const map = document.querySelector('.pin')
-      map.style.left = `${x.value}px`
-      map.style.top = `${y.value}px`
+      if (map) {
+        map.style.left = `${x.value}px`
+        map.style.top = `${y.value}px`
+      }
     })
 
     return {
