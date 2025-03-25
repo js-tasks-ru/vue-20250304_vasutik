@@ -35,7 +35,7 @@ template: `
             <MeetupDescription :description="meetup.description" />
             <h2>Программа</h2>
             <MeetupAgenda v-if="meetup.agenda.length" :agenda="meetup.agenda" />
-            <UiAlert v-else>Программа пока пуста....</UiAlert>
+            <UiAlert v-else>Программа пока пуста...</UiAlert>
           </div>
           <div class="meetup__aside">
             <MeetupInfo
