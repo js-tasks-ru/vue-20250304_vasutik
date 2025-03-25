@@ -11,7 +11,7 @@ export default defineComponent({
 
   components: {
     UiAlert,
-    UiContainer
+    UiContainer,
     MeetupAgenda,
     MeetupDescription,
     MeetupCover,
