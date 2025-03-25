@@ -11,7 +11,7 @@ export default defineComponent({
 
   components: {
     UiAlert,
-    UiContainer,
+    UiContainer
     MeetupAgenda,
     MeetupDescription,
     MeetupCover,
@@ -28,7 +28,6 @@ export default defineComponent({
 template: `
     <div>
       <MeetupCover :title="meetup.title" :image="meetup.image" />
-
       <UiContainer>
         <div class="meetup">
           <div class="meetup__content">
