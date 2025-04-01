@@ -1,6 +1,11 @@
 import { defineComponent } from 'vue'
+
 import { getWeatherData } from './weather.service.ts'
 import WeatherCard from './WeatherCard.js'
+
+import { getWeatherData, WeatherConditionIcons } from './weather.service.ts'
+import './WeatherApp.css'
+
 
 export default defineComponent({
   name: 'WeatherApp',
@@ -26,6 +31,7 @@ export default defineComponent({
       <h1 class="title">Погода в Средиземье</h1>
 
       <ul class="weather-list unstyled-list">
+
         <WeatherCard
           v-for="(item, index) in weatherData"
           :key="index"
